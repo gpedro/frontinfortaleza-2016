@@ -1,0 +1,92 @@
+// Project Fonts
+$font_0: RobotoDraft
+$font_1: Helvetica Neue
+$font_2: Helvetica
+$font_3: Arial
+
+
+//colors
+$white: #fff
+$black: #000
+
+//urls
+$url_0: url('../images/bg.jpg')
+
+
+%position
+	position: absolute
+	top: 0
+	left: 0
+
+body
+	background-color: $white
+	font-family: $font_0, $font_1, $font_2, $font_3
+	line-height: 1.4em
+	margin: 0
+	padding: 0
+
+.main
+	@extend %position
+	background-image: $url_0
+	background-position: center center
+	background-size: cover
+	height: auto
+	min-height: 100%
+	min-width: 100%
+	width: auto
+
+	.overlay
+		@extend %position
+		width: 100%
+		height: 100%
+		background: $black
+		opacity: .5
+		filter: alpha(opacity=50)
+		z-index: 1
+
+	.container
+		position: relative
+		z-index: 2
+
+.content
+	img
+		margin: 20vh auto 20px
+		display: block
+		max-width: 40%
+		max-height: 40%
+
+	p
+		text-align: center
+		font-size: 1.6em
+		color: $white
+		font-weight: 200
+	a
+		text-align: center
+		margin: 20px auto
+		text-transform: uppercase
+		display: block
+		color:  $white
+		text-decoration: none
+		padding: 10px 15px
+		border-radius: 5px
+		border: 1px solid $white
+		max-width: 10%
+		transition: all 0.3s ease 0s
+		&:hover
+			color: #4bd25c
+			border: 1px solid #4bd25c
+
+
+
+@media only screen and(max-width:768px)
+	.content
+		img
+			margin: 25vh auto 0
+			max-width: 60%
+			max-height: 60%
+		p
+			text-align: center
+			font-size: 1em
+			color: $white
+		a
+			max-width: 30%

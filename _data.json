@@ -1,0 +1,29 @@
+{
+    "event": {
+        "logo": "images/logo.png",
+        "name": "Front in Fortaleza",
+        "date": "17 de setembro de 2016",
+        "description": "",
+        "metas": {
+            "url": "https://93abe63d.ngrok.io",
+            "image_url": "https://93abe63d.ngrok.io/images/meta_image.png",
+            "description": "O melhor Frontin do Nordeste, com os melhores do Brasil."
+        }
+
+    },
+    "schedule": [{
+        "ends": "",
+        "start": "",
+        "author": "",
+        "social": "",
+        "title": "",
+        "avatar": "",
+        "desciption": ""
+    }],
+    "posts": [{}],
+    "sponsors": [{
+        "logo": "",
+        "name": "",
+        "site": ""
+    }]
+}

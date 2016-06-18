@@ -1,0 +1,11 @@
+extends layouts/_default
+block content
+	.main
+		.overlay
+		.container(class='content')
+			img(src='#{event.logo}',class='img-responsive', alt="logo #{event.name}")
+			p #{event.date}
+			a.btn.btn-default(href="#") Em breve
+
+
+	
