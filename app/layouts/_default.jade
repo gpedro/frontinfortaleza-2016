@@ -26,8 +26,6 @@ html.no-js
         meta(property='og:image', content='#{event.metas.image_url}')
         meta(property='og:description', content='#{event.metas.description}')
 
-
-
         // build:css styles/main.css
         link(rel='stylesheet' href='styles/main.css')
         // endbuild
@@ -41,15 +39,15 @@ html.no-js
 
         block content
 
-        //- include ../includes/_footer.jade
+        include ../includes/_footer.jade
 
         // build:js scripts/vendor.js
         // bower:js
-        // script(src='/bower_components/jquery/dist/jquery.js')
-        // script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js')
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js')
         // endbower
         // endbuild
 
         // build:js scripts/app.js
-        // script(src='scripts/main.js')
+        script(src='scripts/main.js')
         // endbuild

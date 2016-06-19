@@ -1,11 +1,70 @@
 extends layouts/_default
 block content
-	.main
+	header.main
 		.overlay
 		.container(class='content')
 			img(src='#{event.logo}',class='img-responsive', alt="logo #{event.name}")
 			p #{event.date}
 			a.btn.btn-default(href="#") Em breve
+	//- 
+	section#about
+		h2 Sobre
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	section#speakers
+		h2 Palestrantes
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		.row
+			.col-xs-6.col-md-3
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
+			.col-xs-6.col-md-3
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
+			.col-xs-6.col-md-3
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
+			.col-xs-6.col-md-3
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
+			
+	section#schedule
+		h2 Programação
+		span * a ordem das palestras podem sofrer alterações sem aviso previo
+		.row
+			.col-md-12.well
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	section#map
+		h4 Faculdade 7 de setembro
+		span a melhor Faculdade de fortaleza na avaliação do MEC pelo 4 ano
+	section#sponsors
+		h2 Patrocinadores
+		br
+		span Diamantes
+		.row
+			.col-md-4
+		span Ouro
+		.row
+			.col-md-4
+			.col-md-4
+		span prata
+		.row
+			.col-md-4
+			.col-md-4
+			.col-md-4
+			
+	section#suport
+		.row
+			.col-md-2
+			.col-md-2
+			.col-md-2
+			.col-md-2
+			.col-md-2
+			.col-md-2
+	section#team
+		h2 Curadores
+		.row
+			.col-md-4
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
+			.col-md-4
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
+			.col-md-4
+				img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
 
 
 	

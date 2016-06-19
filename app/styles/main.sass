@@ -1,4 +1,7 @@
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+@import "general"
 // Project Fonts
+
 $font_0: RobotoDraft
 $font_1: Helvetica Neue
 $font_2: Helvetica
@@ -26,13 +29,14 @@ body
 	padding: 0
 
 .main
-	@extend %position
+	// @extend %position
 	background-image: $url_0
 	background-position: center center
 	background-size: cover
 	height: auto
 	min-height: 100%
 	min-width: 100%
+	padding: 100px 0 195px
 	width: auto
 
 	.overlay
@@ -50,7 +54,7 @@ body
 
 .content
 	img
-		margin: 20vh auto 20px
+		margin: 10vh auto 20px
 		display: block
 		max-width: 40%
 		max-height: 40%
@@ -81,7 +85,7 @@ body
 @media only screen and(max-width:768px)
 	.content
 		img
-			margin: 25vh auto 0
+			margin: 28vh auto 0
 			max-width: 60%
 			max-height: 60%
 		p
