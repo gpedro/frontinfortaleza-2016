@@ -1,80 +1,61 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+@import "variables"
 @import "general"
-// Project Fonts
+@import "speakers"
 
-$font_0: RobotoDraft
-$font_1: Helvetica Neue
-$font_2: Helvetica
-$font_3: Arial
-
-
-//colors
-$white: #fff
-$black: #000
-
-//urls
-$url_0: url('../images/bg.jpg')
-
-
+// Extends
 %position
 	position: absolute
 	top: 0
 	left: 0
 
-body
-	background-color: $white
-	font-family: $font_0, $font_1, $font_2, $font_3
-	line-height: 1.4em
-	margin: 0
-	padding: 0
 
 .main
-	// @extend %position
+	width: auto
+	height: auto
+	min-width: 100%
+	min-height: 100%
+	background-size: cover
+	padding: 100px 0 195px
 	background-image: $url_0
 	background-position: center center
-	background-size: cover
-	height: auto
-	min-height: 100%
-	min-width: 100%
-	padding: 100px 0 195px
-	width: auto
 
 	.overlay
-		@extend %position
-		width: 100%
-		height: 100%
-		background: $black
-		opacity: .5
-		filter: alpha(opacity=50)
 		z-index: 1
+		width: 100%
+		height: 74%
+		opacity: .5
+		@extend %position
+		background: $black
+		filter: alpha(opacity=50)
 
 	.container
-		position: relative
 		z-index: 2
+		position: relative
 
 .content
 	img
-		margin: 10vh auto 20px
 		display: block
 		max-width: 40%
 		max-height: 40%
+		margin: 10vh auto 20px
 
 	p
-		text-align: center
-		font-size: 1.6em
 		color: $white
+		font-size: 1.6em
 		font-weight: 200
-	a
 		text-align: center
-		margin: 20px auto
-		text-transform: uppercase
+	a
+		max-width: 10%
 		display: block
 		color:  $white
-		text-decoration: none
+		margin: 20px auto
+		text-align: center
 		padding: 10px 15px
 		border-radius: 5px
+		text-decoration: none
 		border: 1px solid $white
-		max-width: 10%
+		text-transform: uppercase
 		transition: all 0.3s ease 0s
 		&:hover
 			color: #4bd25c
@@ -82,15 +63,19 @@ body
 
 
 
+
 @media only screen and(max-width:768px)
+	.main
+		.overlay
+			height: 87%
 	.content
 		img
-			margin: 28vh auto 0
 			max-width: 60%
 			max-height: 60%
+			margin: 28vh auto 0
 		p
-			text-align: center
-			font-size: 1em
 			color: $white
+			font-size: 1em
+			text-align: center
 		a
 			max-width: 35%
