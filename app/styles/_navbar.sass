@@ -1,0 +1,70 @@
+.navbar-default
+  background-color: $gray-darkest
+  border-color: transparent
+
+  .navbar-collapse
+    margin-left: 15%
+
+
+  .navbar-toggle
+    background-color: $brand-primary
+    border-color: $brand-primary
+
+    .icon-bar
+      background-color: white
+
+    &:focus,
+    &:hover
+      background-color: $brand-primary
+
+  .nav
+    li
+      a
+        font-size: 18px
+        font-weight: 400
+        letter-spacing: 1px
+        color: white
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+          color: $brand-primary
+          outline: none
+
+  .navbar-nav > .active > a
+    border-radius: 0
+    color: white
+    background-color: $brand-primary
+
+  .navbar-nav > .active > a:focus,
+  .navbar-nav > .active > a:hover
+    color: white
+    background-color: darken($brand-primary, 10%)
+
+
+// RESPONSIVE
+
+@media(min-width:768px)
+  .navbar-default
+    background-color: transparent
+    padding: 25px 0
+    transition: padding 0.3s
+    border: none
+
+    .navbar-brand
+      font-size: 2em
+      transition: all 0.3s
+
+    .navbar-nav > .active > a
+      border-radius: 3px
+
+  .navbar-default.navbar-shrink
+    background-color: $gray-darkest
+    padding: 10px 0
+
+    .navbar-brand
+      font-size: 1.5em
+
+  .navbar-custom.affix
+    background-color: #222
+    padding: 10px 0

@@ -3,28 +3,55 @@
         "logo": "images/logo.png",
         "name": "Front in Fortaleza 2016",
         "date": "17 de setembro de 2016",
-        "description": "",
+        "location": {
+            "place": "Faculdade 7 de Setembro",
+            "adress": "Av. Almirante Maximiniano da Fonseca",
+            "description": "A melhor faculdade de fortaleza na avaliação do MEC pelo 4º ano consectivo",
+            "adress2": "Eng. Luciano Cavalcante, Fortaleza/ CE",
+            "lat": "-3.7710272",
+            "lng": "-38.4836495"
+        },
+        "description": "A terceira edição do Front in Fortaleza ocorrerá dia 17 de setembro de 2016, tem como tema principal o desenvolvimento da camada mais próxima dos usuários e clientes de soluções web... ou seja, tudo que ele vê e interage: FrontEnd e suas tecnologias(HTML,CSS,JS).",
         "metas": {
-            "url": "https://93abe63d.ngrok.io",
-            "image_url": "https://93abe63d.ngrok.io/images/meta_image.png",
+            "url": "https://af546893.ngrok.io",
+            "image_url": "https://af546893.ngrok.io/images/meta_image.png",
             "description": "O melhor Frontin do Nordeste, com os melhores do Brasil.",
             "keywords": "Frontend, front in fortaleza"
         }
 
     },
     "schedule": [{
-        "ends": "",
-        "start": "",
-        "author": "",
+        "end": "9:00",
+        "start": "8:00",
+        "class": "",
+        "author": "Vitor Alencar",
         "social": "",
-        "title": "",
+        "title": "Firebase Para leigos",
         "avatar": "",
-        "desciption": ""
+        "desciption": "lorem ipsun"
+    }, {
+        "end": "8:00",
+        "start": "9:00",
+        "class": "event_item",
+        "author": "Front in fortaleza",
+        "social": "",
+        "title": "Firebase Para leigos",
+        "avatar": "",
+        "desciption": "lorem ipsun"
     }],
     "posts": [{}],
     "sponsors": [{
-        "logo": "",
-        "name": "",
+        "logo": "images/partner.png",
+        "name": "Front in Fortaleza",
         "site": ""
+    }],
+    "team": [{
+        "avatar": "images/elias.jpg",
+        "name": "Elias de Oliveira",
+        "site": "@faeliaso"
+    }, {
+        "avatar": "images/vitor.jpg",
+        "name": "Vitor Alencar",
+        "site": "@vitormalencar"
     }]
 }

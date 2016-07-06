@@ -1,125 +1,118 @@
 extends layouts/_default
 block content
-	//- header.main
-		.overlay
-		.container(class='content')
+	header.main#page-top
+		.container.content
 			img(src='#{event.logo}',class='img-responsive', alt="logo #{event.name}")
 			p #{event.date}
-			a.btn.btn-default(href="#") Em breve
-	//-
+			a.btn.btn-outline(href="#") Em breve
+
 	.container
-		.row-padded.row-centered.row-bordered
-			section#about
-				h2 Sobre
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		
-		.row-padded.row-centered.row-bordered
-			section#speakers
-				h2 Palestrantes
-				p Confira os nomes já confirmados que vão trazer e compartilhar conhecimento
+		section#about
+			h2.section-heading Sobre
+			p #{event.description}
+	
+		//- section#speakers
+			.container
 				.row
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-						#trapezoid
-							h4 caption
-					
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-									
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-						
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-							
-				.row
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-					
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-									
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-						
-					.col-xs-6.col-md-3.speakers-item
-						a.speakers-link(href='#portfolioModal1', data-toggle='modal')
-							.caption
-								.caption-content
-									i.fa.fa-search-plus.fa-3x
-							img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-			
+					.col-lg-12
+						h2.section-heading Palestrantes
+						h4 Confira os nomes já confirmados que vão trazer e compartilhar conhecimento
+						br
 				
-		section#schedule
-			h2 Programação
-			span * a ordem das palestras podem sofrer alterações sem aviso previo
+			.container
+			each val in [1, 2]
+				.row
+				each val in [1, 2, 3,4]
+					.col-md-3.col-xs-6.speakers-item
+						a.speakers-link(href='#speakersModal1', data-toggle='modal')
+							.speakers-hover
+								.speakers-hover-content
+									i.fa.fa-search.fa-3x
+							img.img-responsive(src='images/sheldon.png', alt='')
+		
+	//- section#schedule
+		.container
 			.row
-				.col-md-12.well
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		section#map
-			h4 Faculdade 7 de setembro
-			span a melhor Faculdade de fortaleza na avaliação do MEC pelo 4 ano
-		section#sponsors
-			h2 Patrocinadores
-			br
-			span Diamantes
+				.col-lg-12
+					h2.section-heading Programação
+					span *A ordem das palestras podem mudar sem aviso previo
+					br
+					br
+		.container
 			.row
-				.col-md-4
+			each item in schedule
+				.well(class='#{item.class}')
+					span.time #{item.start} - #{item.end}
+					span #{item.desciption}
+				
+	aside#localization
+		.container
+			.row
+				.col-lg-12
+					h2.section-heading #{event.location.place}
+					h4 #{event.location.description}
+					br
+					br
+			.row
+				.col-lg-6
+					h4 #{event.location.adress}
+					h4 #{event.location.adress2}
+				.col-lg-6
+					span.marker
+						i.fa.fa-map-marker
+						a(href='https://www.google.com/maps/dir/#{event.location.lat},#{event.location.lng}/@#{event.location.lat},#{event.location.lng},18z') Veja como </br> chegar ao evento
+					
+	section#sponsors
+		.container
+			.row
+				.col-lg-12
+					h2.section-heading Patrocinadores
+					br
+		
+		.container
+			span Diamante
+			.row
+				.col-md-8
+				each sponsor in sponsors
+					img.img-responsive.diamont(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+					
 			span Ouro
 			.row
-				.col-md-4
-				.col-md-4
+				each sponsor in sponsors
+					.col-md-4
+						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+			
 			span prata
 			.row
-				.col-md-4
-				.col-md-4
-				.col-md-4
+				each sponsor in sponsors
+					.col-md-3
+						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+						
+	section#suport(style='padding: 0 0 150px;')
+		.container
+			.row
+				.col-lg-12
+					h2.section-heading Apoio
+					br
+			.row
+				each sponsor in sponsors
+					.col-md-3
+						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Apoiador')
+
+
+	section#team
+		.container
+			.row
+				.col-lg-12
+					h2.section-heading Curadores
+					br
+			.row
+				each organizer in team
+					.col-md-3
+						.organizer
+							a(href='https://twitter.com/#{organizer.site}')
+								img.hex(alt='#{organizer.name}', src='#{organizer.avatar}')
+							h3 #{organizer.name}
+							span #{organizer.site}
 				
-		section#suport
-			.row
-				.col-md-2
-				.col-md-2
-				.col-md-2
-				.col-md-2
-				.col-md-2
-				.col-md-2
-		section#team
-			h2 Curadores
-			.row
-				.col-md-4
-					img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-				.col-md-4
-					img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-				.col-md-4
-					img.img-responsive(src="http://www.nbc.com/the-tonight-show/content/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2015/03/10/jim-parsons.jpg?itok=LpdfwS9f", alt="avatar")
-
-
-		
+	include includes/_speakers_modal.jade

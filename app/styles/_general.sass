@@ -1,61 +1,30 @@
-
 body
   background-color: #EBEFF2
   line-height: 1.4em
+
+
+// Global Section Styles
 section
-  padding: 50px 0
-  h2
+  padding: 100px 0
+
+  h2.section-heading
+    font-size: 38px
+    margin-top: 0
+    margin-bottom: 15px
     font-weight: bold
-    margin-bottom: 40px
-    font-size: 3em
+
+  h3.section-subheading
+    font-size: 16px
+    text-transform: none
+    font-style: italic
+    font-weight: 400
+    margin-bottom: 75px
+
+.event_item
+  background-color: #b4b0b0 !important
+  text-transform: uppercase
+
 
 @media(min-width: 768px)
   section
-    padding: 75px 0
-  section.first
-    padding-top: 75px
-
-
-// Container
-@media(min-width: 768px)
-  .container
-    width: 710px
-
-
-@media(min-width: 992px)
-  .container
-    width: 890px
-
-
-@media(min-width: 1200px)
-  .container
-    width: 1050px
-
-
-// row
-
-.row-centered
-  display: flex
-  align-items: center
-
-.row-spaced
-  margin-bottom: 80px !important
-  &:last-child
-    margin-bottom: 0 !important
-
-.row-padded
-  padding-top: 80px
-  padding-bottom: 90px
-
-.row-bordered
-  position: relative
-  &:before
-    content: ''
-    display: block
-    width: 80%
-    position: absolute
-    bottom: 0
-    left: 50%
-    margin-left: -40%
-    height: 1px
-    background: radial-gradient(ellipse at center, $black_20 0, rgba(255, 255, 255, 0) 75%)
+    padding: 150px 0

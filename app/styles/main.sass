@@ -1,81 +1,214 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+
+// IMPORTS
 @import "variables"
 @import "general"
+@import "navbar"
 @import "speakers"
 
-// Extends
-%position
-	position: absolute
-	top: 0
-	left: 0
-
-
-.main
-	width: auto
-	height: auto
-	min-width: 100%
-	min-height: 100%
+header
+	color: $white
+	padding: 250px 0
+	text-align: center
 	background-size: cover
-	padding: 100px 0 195px
+	background-repeat: none
 	background-image: $url_0
 	background-position: center center
 
-	.overlay
-		z-index: 1
-		width: 100%
-		height: 74%
-		opacity: .5
-		@extend %position
-		background: $black
-		filter: alpha(opacity=50)
+	p
+		font-size: 28px
+		margin: 40px auto 50px
 
-	.container
-		z-index: 2
-		position: relative
+	.btn-outline
+		padding: 10px 15px
+		color: $white
+		border: 1px solid $white
+		border-radius: 5px
+		font-size: 22px
+		transition: all 0.3s ease 0s
+		&:hover
+			color: $brand-primary
+			border-color: $brand-primary
+
+	@media only screen and(max-width:768px)
+		padding: 150px 0
+
+		p
+			font-size: 28px
+			margin: 20px auto
+
+		.btn-outline
+			font-size: 18px
+
 
 .content
 	img
 		display: block
 		max-width: 40%
 		max-height: 40%
-		margin: 10vh auto 20px
-
+		margin: 0 auto 20px
 	p
 		color: $white
-		font-size: 1.6em
 		font-weight: 200
 		text-align: center
-	a
-		max-width: 10%
-		display: block
-		color:  $white
-		margin: 20px auto
+
+#about
+	p
+		font-size: 24px
+		line-height: 1.5
+
+// PALESTRANTES
+#speakers
+	img
+		width: 400px
+
+// PROGRAMAÇÃO
+#schedule
+	.time
+		font-size: 18px
+		margin-right: 20px
+
+	.well
+		border: none
+		margin: 10px auto
+		color: $white
+		background-color: $brand-danger
+		font-size: 22px
+		border-radius: 10px
+		font-weight: bold
+
+	@media only screen and(max-width:768px)
+		.time
+			display: block
+			margin: 15px auto
+
+
+//  PATROCINADORES
+#sponsors
+	.row
+		margin: 25px 0
+	span
+		font-size: 28px
+		color: #666666
+		line-height: 2.0
+
+	.diamont
+		max-width: 400px
+
+	@media only screen and(max-width:768px)
+		.diamont
+			max-width: 250px
+
+
+// Localização
+#localization
+	padding: 50px 20px
+	color: $white
+	background-color: black
+	background-image: $aside_bg
+	background-size: cover
+	background-repeat: none
+	background-position: center center
+
+	.marker
+		float: right
+		a
+			font-size: 22px
+			font-weight: bold
+			color: $white
+			text-decoration: none
+			text-transform: uppercase
+			text-align: justify
+			line-height: 1.5
+
+
+		i
+			font-size: 44px
+			margin-right: 10px
+
+	@media only screen and(max-width:768px)
+		.marker
+			float: none
+			margin: 20px auto 10px
+			display: block
+			text-align: center
+
+
+
+#team
+
+	.organizer
 		text-align: center
-		padding: 10px 15px
-		border-radius: 5px
+	  width: 200px
+	  margin: 20px
+	  float: left
+	.hex
+	  -webkit-mask-image: url($hex-url)
+	  -moz-mask-image: url($hex-url)
+	  background-size: contain
+	  width:  200px
+	  height: 200px
+	  margin: 0 auto
+	  display: block
+
+
+// Contato
+#contact
+	background-color: $bg-gray
+	color: $white
+	padding: 100px 20px
+
+	.social-icons
+		i
+			background-color: $white
+			color: $bg-gray
+			font-size: 22px
+			border-radius: 50%
+			margin-right: 10px
+			padding: 10px 15px
+
+		.fa-twitter
+			padding: 10px 12px
+
+	a
+		font-size: 26px
 		text-decoration: none
-		border: 1px solid $white
-		text-transform: uppercase
-		transition: all 0.3s ease 0s
-		&:hover
-			color: #4bd25c
-			border: 1px solid #4bd25c
+		color: $white
+
+	p
+		font-size: 24px
+		line-height: 2.0
+
+	.section-heading
+		font-weight: bold
+		font-size: 55px
+	@media only screen and(max-width:768px)
+		h1
+			font-size: 24px
+		a
+			font-size: 14px
+		p
+			font-size: 18px
+			line-height: 1.5
+
+.code-of-conduct
+	padding: 60px
+	text-align: center
+	background-color: #456E7B
+	font-size: 22px
+	a
+		color: $white
+		text-decoration: none
 
 
-
-
+/////////////////
 @media only screen and(max-width:768px)
-	.main
-		.overlay
-			height: 87%
+
 	.content
 		img
 			max-width: 60%
 			max-height: 60%
-			margin: 28vh auto 0
 		p
 			color: $white
 			font-size: 1em
 			text-align: center
-		a
-			max-width: 35%
