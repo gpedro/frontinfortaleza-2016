@@ -11,7 +11,7 @@ block content
 			h2.section-heading Sobre
 			p #{event.description}
 	
-		section#speakers
+		//- section#speakers
 			.container
 				.row
 					.col-lg-12
@@ -23,15 +23,14 @@ block content
 			each val in [1, 2]
 				.row
 				each val in [1, 2, 3,4]
-					.col-md-3.col-xs-6.speakers-item
+					.col-md-3.col-xs-12.speakers-item
 						a.speakers-link(href='#speakersModal1', data-toggle='modal')
 							.speakers-hover
 								.speakers-hover-content
 									i.fa.fa-search.fa-3x
 							img.img-responsive(src='images/sheldon.png', alt='')
 		
-	section#schedule
-	
+	//- section#schedule
 		.container
 			.row
 				.col-lg-12
@@ -62,33 +61,29 @@ block content
 					span.marker
 						i.fa.fa-map-marker
 						a(href='https://www.google.com/maps/dir/#{event.location.lat},#{event.location.lng}/@#{event.location.lat},#{event.location.lng},18z') Veja como </br> chegar ao evento
-					
-	section#sponsors
-		.container
-			.row
-				.col-lg-12
-					h2.section-heading Patrocinadores
-					br
-		
-		.container
-			span Diamante
-			.row
-				.col-md-8
-				each sponsor in sponsors
-					img.img-responsive.diamont(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
-					
-			span Ouro
-			.row
-				each sponsor in sponsors
-					.col-md-4
-						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
-			
-			span prata
-			.row
-				each sponsor in sponsors
-					.col-md-3
-						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+	
+	.container
+		section#sponsors
+			h2.section-heading Patrocinadores
+			.container
+				span Diamante
+				.row
+					each sponsor in sponsors.diamante
+						.col-md-12
+							img.img-responsive.diamont(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
 						
+				span Ouro
+				.row
+					each sponsor in sponsors.ouro
+						.col-md-4.col-xs-6
+							img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+				
+				span prata
+				.row
+					each sponsor in sponsors.prata
+						.col-md-3.col-xs-6
+							img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+					
 	section#suport(style='padding: 0 0 150px;')
 		.container
 			.row
@@ -96,9 +91,9 @@ block content
 					h2.section-heading Apoio
 					br
 			.row
-				each sponsor in sponsors
-					.col-md-3
-						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Apoiador')
+				each sponsor in suport
+					.col-md-3.col-xs-6
+						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Apoiador' style='margin:10px auto;')
 
 
 	section#team

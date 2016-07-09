@@ -3,8 +3,9 @@
   border-color: transparent
 
   .navbar-collapse
-    margin-left: 15%
-
+    margin-left: 27%
+    border: none
+    box-shadow: none
 
   .navbar-toggle
     background-color: $brand-primary
@@ -42,9 +43,15 @@
     background-color: darken($brand-primary, 10%)
 
 
-// RESPONSIVE
+@media only screen and (max-width : 480px)
+  .navbar-default
+     .navbar-collapse
+       margin-left: 0
 
+
+// RESPONSIVE
 @media(min-width:768px)
+
   .navbar-default
     background-color: transparent
     padding: 25px 0
