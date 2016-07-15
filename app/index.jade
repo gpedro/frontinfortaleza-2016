@@ -62,7 +62,7 @@ block content
 						i.fa.fa-map-marker
 						a(href='https://www.google.com/maps/dir/#{event.location.lat},#{event.location.lng}/@#{event.location.lat},#{event.location.lng},18z') Veja como </br> chegar ao evento
 	
-	.container
+	//- .container
 		section#sponsors
 			h2.section-heading Patrocinadores
 			.container
@@ -84,7 +84,7 @@ block content
 						.col-md-3.col-xs-6
 							img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
 					
-	section#suport(style='padding: 0 0 150px;')
+	section#suport
 		.container
 			.row
 				.col-lg-12
@@ -93,10 +93,11 @@ block content
 			.row
 				each sponsor in suport
 					.col-md-3.col-xs-6
-						img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Apoiador' style='margin:10px auto;')
+						a(href="#{sponsor.site}")
+							img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Apoiador' style='margin:10px auto;')
 
 
-	section#team
+	section#team(style='padding:0 0 150px')
 		.container
 			.row
 				.col-lg-12

@@ -41,37 +41,13 @@
     }],
     "posts": [{}],
     "suport": [{
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
+        "logo": "images/fif16_deucertin.png",
+        "name": "Deucertin",
         "site": ""
     }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
-    }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
-    }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
-    }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
-    }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
-    }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
-    }, {
-        "logo": "https://placeholdit.imgix.net/~text?txtsize=21&txt=230%C3%97230&w=230&h=230",
-        "name": "Front in Fortaleza",
-        "site": ""
+        "logo": "images/fif16_fa7.png",
+        "name": "Faculdade FA7",
+        "site": "http://www.fa7.edu.br/"
     }],
     "sponsors": {
         "diamante": [{
