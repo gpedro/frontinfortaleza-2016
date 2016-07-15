@@ -4,7 +4,7 @@
         "name": "Front in Fortaleza 2016",
         "date": "17 de setembro de 2016",
         "location": {
-            "place": "Faculdade 8 de Setembro",
+            "place": "Faculdade 7 de Setembro",
             "adress": "Av. Almirante Maximiniano da Fonseca",
             "description": "A melhor faculdade de fortaleza na avaliação do MEC pelo 4º ano consectivo",
             "adress2": "Eng. Luciano Cavalcante, Fortaleza/ CE",
@@ -13,8 +13,8 @@
         },
         "description": "A terceira edição do Front in Fortaleza ocorrerá dia 17 de setembro de 2016, tem como tema principal o desenvolvimento da camada mais próxima dos usuários e clientes de soluções web... ou seja, tudo que ele vê e interage: FrontEnd e suas tecnologias(HTML,CSS,JS).",
         "metas": {
-            "url": "https://af546893.ngrok.io",
-            "image_url": "https://af546893.ngrok.io/images/meta_image.png",
+            "url": "http://www.frontinfortaleza.com.br/",
+            "image_url": "http://www.frontinfortaleza.com.br//images/meta_image.png",
             "description": "O melhor Frontin do Nordeste, com os melhores do Brasil.",
             "keywords": "Frontend, front in fortaleza"
         }
