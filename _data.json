@@ -41,13 +41,17 @@
     }],
     "posts": [{}],
     "suport": [{
+        "logo": "images/fif16_fa7.png",
+        "name": "Faculdade FA7",
+        "site": "http://www.fa7.edu.br/"
+    }, {
         "logo": "images/fif16_deucertin.png",
         "name": "Deucertin",
         "site": ""
     }, {
-        "logo": "images/fif16_fa7.png",
-        "name": "Faculdade FA7",
-        "site": "http://www.fa7.edu.br/"
+        "logo": "images/casa_do_codigo.png",
+        "name": "Casa do código",
+        "site": "https://www.casadocodigo.com.br/"
     }],
     "sponsors": {
         "diamante": [{
