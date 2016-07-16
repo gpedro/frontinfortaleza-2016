@@ -132,33 +132,35 @@ header
 
 #call-to-action
 	padding: 100px
-	color: white
+	color: $white
 	background-color: #375A64
 	p
 		line-height: 1.5
 		font-size: 16px
 
-	.btn-default
-		color: white
-		background-color: $brand-primary
+	.btn-outline
+		color: $white
+		border: 1px solid $white
 		margin: 40px 20px
 		padding: 20px 15px
 		font-size: 18px
 		vertical-align: middle
-		max-width: 80%
-		border: none
+		max-width: 85%
 		transition: all 0.3s ease 0s
 		&:hover
-			background-color: darken($brand-primary, 10%)
+			border-color: $brand-primary
+			background-color: $brand-primary
 
 	@media only screen and(max-width:768px)
-		padding: 50px
+		padding: 50px 0
 		text-align: center
 		h2
 			margin: 20px auto
 
 		.btn-default
 			margin: 50px auto
+			max-width: 85%
+
 
 
 
