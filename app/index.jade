@@ -71,27 +71,28 @@ block content
 				.col-xs-12.col-md-6
 					a.btn.btn-block.btn-outline(href="mailto:contato@frontinfortaleza.com.br") Torne-se um parceiro
 	
-	//- .container
+	.container
 		section#sponsors
 			h2.section-heading Patrocinadores
 			.container
-				span Diamante
-				.row
-					each sponsor in sponsors.diamante
-						.col-md-12
-							img.img-responsive.diamont(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
-						
-				span Ouro
-				.row
-					each sponsor in sponsors.ouro
-						.col-md-4.col-xs-6
-							img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+				//- span Diamante
+				//- .row
+				//- 	each sponsor in sponsors.diamante
+				//- 		.col-md-12
+				//- 			img.img-responsive.diamont(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+				//- 		
+				//- span Ouro
+				//- .row
+				//- 	each sponsor in sponsors.ouro
+				//- 		.col-md-4.col-xs-6
+				//- 			img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
 				
-				span prata
+				span bronze
 				.row
-					each sponsor in sponsors.prata
+					each sponsor in sponsors.bronze
 						.col-md-3.col-xs-6
-							img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores Diamante')
+							a(href="#{sponsor.site}")
+								img.img-responsive(src='#{sponsor.logo}' alt='#{sponsor.name} Patrocinadores bronze')
 					
 	section#suport
 		.container

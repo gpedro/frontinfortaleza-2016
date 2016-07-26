@@ -7,7 +7,7 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 // Constants
 const $ = gulpLoadPlugins();
 gulp.task('build', () => {
-  runSequence(['html', 'images', 'extras', 'font-awesome','critical']);
+  runSequence(['html', 'images', 'extras', 'font-awesome', ], 'critical');
   return gulp.src(paths.build.root)
     .pipe($.size({
       title: 'build',

@@ -11,7 +11,7 @@
             "lat": "-3.7710272",
             "lng": "-38.4836495"
         },
-        "description": "A terceira edição do Front in Fortaleza ocorrerá dia 17 de setembro de 2016, tem como tema principal o desenvolvimento da camada mais próxima dos usuários e clientes de soluções web... ou seja, tudo que ele vê e interage: FrontEnd e suas tecnologias(HTML,CSS,JS).",
+        "description": "A terceira edição do Front in Fortaleza ocorrerá dia 17 de setembro de 2016, tem como tema principal o desenvolvimento da camada mais próxima dos usuários e clientes de soluções web... ou seja, tudo que ele vê e interage: FrontEnd e suas tecnologias (HTML5, CSS3, JavaScript/ES6 e afins).",
         "metas": {
             "url": "http://www.frontinfortaleza.com.br/",
             "image_url": "http://www.frontinfortaleza.com.br//images/meta_image.png",
@@ -47,11 +47,19 @@
     }, {
         "logo": "images/fif16_deucertin.png",
         "name": "Deucertin",
-        "site": ""
+        "site": "https://www.facebook.com/deucertin/"
     }, {
         "logo": "images/casa_do_codigo.png",
-        "name": "Casa do código",
+        "name": "Casa do Código",
         "site": "https://www.casadocodigo.com.br/"
+    }, {
+        "logo": "images/fif16_qw.png",
+        "name": "QueroWorkar",
+        "site": "http://queroworkar.com.br/"
+    }, {
+        "logo": "images/fif2016_repassi.png",
+        "name": "repassi cursos e eventos",
+        "site": "http://repassi.com.br/"
     }],
     "sponsors": {
         "diamante": [{
@@ -105,7 +113,15 @@
             "name": "Front in Fortaleza",
             "site": ""
         }],
-        "bronze": [{}]
+        "bronze": [{
+            "logo": "images/fif16_eventick.png",
+            "name": "Eventick",
+            "site": "https://www.eventick.com.br/"
+        }, {
+            "logo": "images/fif2016_tw.png",
+            "name": "Treinaweb",
+            "site": "https://www.treinaweb.com.br/"
+        }]
     },
     "team": [{
         "avatar": "images/elias.jpg",
